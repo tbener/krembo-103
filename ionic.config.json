@@ -1,0 +1,7 @@
+{
+  "name": "krembo-103",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
