@@ -1,0 +1,16 @@
+<app-page-header header="Dialer"></app-page-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid columns="3" padding="0">
+    <ion-row *ngFor="let contact of contacts">
+      <ion-col>
+        <ion-avatar>
+          <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt={{contact.name}}&w=100&h=100" />
+        </ion-avatar>
+        <ion-button color="primary" (click)="call(contact)">
+          {{contact.name}}
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
