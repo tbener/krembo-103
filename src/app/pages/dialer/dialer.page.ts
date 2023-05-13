@@ -27,10 +27,6 @@ export class DialerPage implements OnInit {
     ngOnInit() {
     }
 
-    call(contact: { name: string }) {
-        // Make a call to the contact's phone number.
-        // Display a nice message.
-        alert(`Calling ${contact.name}`);
-    }
+
 
 }

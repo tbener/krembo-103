@@ -8,6 +8,7 @@ import { DialerPageRoutingModule } from './dialer-routing.module';
 
 import { DialerPage } from './dialer.page';
 import { PageComponentsModule } from '../page-components/page-components.module';
+import { DialerContactComponent } from './components/dialer-contact/dialer-contact.component';
 
 @NgModule({
     imports: [
@@ -18,7 +19,8 @@ import { PageComponentsModule } from '../page-components/page-components.module'
         PageComponentsModule
     ],
     declarations: [
-      DialerPage
+      DialerPage,
+      DialerContactComponent
     ]
 })
 export class DialerPageModule { }

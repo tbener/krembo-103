@@ -1,0 +1,11 @@
+<ion-card class="rounded-lg cursor-pointer" (click)="call(contact)">
+  <ion-item class="items-center">
+    <ion-avatar slot="start">
+      <img class="rounded-full" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <ion-label class="text-center mt-2">
+      <h2 class="text-base font-medium">{{ contact.name }}</h2>
+      <p class="text-base text-gray-600">{{ contact.number }}</p>
+    </ion-label>
+  </ion-item>
+</ion-card>
