@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { ErrorHandler, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -9,6 +9,7 @@ import { DialerPageRoutingModule } from './dialer-routing.module';
 import { DialerPage } from './dialer.page';
 import { PageComponentsModule } from '../page-components/page-components.module';
 import { DialerContactComponent } from './components/dialer-contact/dialer-contact.component';
+import { CallNumber } from '@awesome-cordova-plugins/call-number/ngx';
 
 @NgModule({
     imports: [
@@ -16,11 +17,15 @@ import { DialerContactComponent } from './components/dialer-contact/dialer-conta
         FormsModule,
         IonicModule,
         DialerPageRoutingModule,
-        PageComponentsModule
+        PageComponentsModule,
+
     ],
     declarations: [
       DialerPage,
       DialerContactComponent
+    ],
+    providers: [
+      CallNumber,
     ]
 })
 export class DialerPageModule { }
